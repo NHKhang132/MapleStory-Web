@@ -1,7 +1,9 @@
 const video1 = document.getElementById('video1')
 const video2 = document.getElementById('video2')
+const audio = document.getElementById('audio')
 
 video2.style.display = 'none'
+audio.volume = 0.1;
 
 setTimeout( function(){
     video1.style.display = 'none';
