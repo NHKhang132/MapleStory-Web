@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    z-index: 0;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+video{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+.head{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+.logo{
+    width: 20%;
+    margin-top: 3vw;
+}
+.content{           
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: auto;
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    margin-top: 40vw;
+}
+h3{
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+button{
+    background: linear-gradient(rgb(255, 72, 0), rgb(212, 66, 8), rgb(255, 72, 0));
+    border: solid rgb(255, 186, 59) 3px;
+    border-radius: 25px;
+    width: 15vw;
+    height: 3vw;
+    margin-top: 2vw;
+    color: white;
+    font-size: 1.2vw;
+    font-family: 'Belgrano', serif;
+}
+
+    button:hover{
+        background: linear-gradient(rgb(255, 175, 28), orange, rgb(255, 72, 0), rgb(212, 66, 8));
+        border: solid rgb(255, 72, 0) 3px;
+    }
+
+.footing{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.footingImg{
+    width: 100vw;
+    height: auto;
+    margin-top: -3.4vw;
+    z-index: 1;
+}
+
+.footingContent{
+    position: absolute;
+    width: 30vw;
+    z-index: 2;
+}
+.join{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+    text-align: center;
+    color: white;
+    font-family: 'Luckiest Guy', cursive;
+}
+.contact{
+    position: relative;
+    display: flex;
+    margin-top: 2vw;
+    height: 5vw;
+    justify-content: space-between;
+    z-index: 2;
+}
+.icon{
+    font-size: 2.5vw;
+    color: white;
+}
+
+    .icon:hover{
+        color: orange;
+    }
+
+.copyright{
+    position: relative;
+    margin-top: 0.5vw;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}

@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(../Maple/world/2.png);
+    background-size:100vw 100vw, auto;
+    background-repeat:no-repeat, no-repeat;
+    background-position:center, center;
+}
+
+.world a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: cyan;
+}
+
+.slogan{
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 0;
+    font-family: 'Acme', sans-serif;
+}
+
+.maple{
+    color: sandybrown;
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-top: 0.5vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-family: 'Titan One', cursive;
+}
+
+.des{
+    color: white;
+    font-size: 1vw;
+    margin-top: 1vw;
+    text-align: justify;
+    padding-left: 1vw;
+    margin-left: 1vw;
+    border-left: solid sandybrown;
+    font-family: 'Lora', serif;
+}
+
+.world-map{
+    display: flex;;
+    width: 100vw;
+    margin-top: 3vw;
+}
+
+.world-des{
+    width: 40%;
+    padding-left: 10%;
+}
+
+.world-img{
+    width: 60%;
+    text-align: center;
+}
+
+.img-container{
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+.whole-world{
+    width: auto;
+    height: auto;
+}
+
+.island{
+    pointer-events: none;
+}
+
+.island .island-hover{
+    background: none;
+    pointer-events: auto;
+    opacity: 0;
+}
+
+    .island-hover:hover{
+        opacity: 1;
+    }
+    
+
+
+.modal{
+    position: absolute;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+}
+
+.island-detail-container{
+    position: absolute;
+    margin: 0%;
+    top: 5vw;
+    left: 20vw;
+    display: block;
+    width: 60vw;
+    height: 85vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    -ms-overflow-style: none; 
+    z-index: 10;
+    border-radius: 10px;
+    border: solid sandybrown black 5px;
+    border-style: ridge;
+    box-shadow: 0px 0px 40px 0px rgb(252, 252, 141);
+}
+
+    .island-detail-container::-webkit-scrollbar{
+        display: none;
+    } 
+
+
+.island-detail{
+    position: absolute;
+    background-image: url(../Maple/world/bg_island.jpg);
+    background-size: cover;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.island-img-con{
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+
+}
+
+.island-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 1vw;
+    box-shadow: 10px 10px 20px 0px black;
+    border-radius: 5px;
+}
+
+.head{
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: brown;
+    font-family: 'Secular One', sans-serif;
+}
+
+.island-name{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(126, 32, 32);
+    font-family: 'Patua One', cursive;
+    border-bottom: double rgb(126, 32, 32);
+}
+
+.island-des{
+    margin: 10px 50px;
+    text-align: justify;
+    font-family: 'Lora', serif;
+}
+
+.x-button{
+    position: fixed;
+    top: 6vw;
+    right: 21vw;
+    width: 3vw;
+    height: auto;
+}
+
+    .x-button .cross-sword{
+        width: 100%;
+        height: auto;
+        animation-name: x_out;
+        animation-duration: 1s;
+    }
+
+        .cross-sword:hover{
+            transform: rotate(180deg);
+            animation-name: x_in;
+            animation-duration: 1s;
+        }
+
+        @keyframes x_in{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes x_out{
+            0%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }

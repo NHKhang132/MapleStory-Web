@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="Classes.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+
+    <title>Classes</title>
+</head>
+
+
+<body>
+    <div class="header"></div>
+
+    <div class="classes-list" id="classes-list">
+        <div class="classes" id="classes" onclick="return img_onclick()">
+            <img class="class-img warrior" id="warrior" src="../Maple/warrior.jpg">
+            <img class="class-img1 warrior1" id="warrior1" src="../Maple/warrior1.png ">
+        </div>
+        <div class="classes" id="classes" onclick="return img_onclick()">
+            <img class="class-img magican" id="magican" src="../Maple/magican.jpg">
+            <img class="class-img1 magican1" id="magican1" src="../Maple/magican1.png">
+        </div>
+        <div class="classes" id="classes" onclick="return img_onclick()">
+            <img class="class-img bowman" id="bowman" src="../Maple/bowman.jpg">
+            <img class="class-img1 bowman1" id="bowman1" src="../Maple/bowman1.png">
+        </div>
+        <div class="classes" id="classes" onclick="return img_onclick()">
+            <img class="class-img thief" id="thief" src="../Maple/thief.jpg">
+            <img class="class-img1 thief1" id="thief1" src="../Maple/thief1.png">
+        </div>
+        <div class="classes" id="classes" onclick="return img_onclick()">
+            <img class="class-img pirate" id="pirate" src="../Maple/pirate.jpg">
+            <img class="class-img1 pirate1" id="pirate1" src="../Maple/pirate1.png">
+        </div>
+    </div>
+
+    <div class="classes-detail" id="classes-detail" style="background-color: royalblue;">
+        <div class="x-button" onclick="return xbtn_onclick()">
+            <img class="cross-sword" src="../Maple/crossed-sword.png">
+        </div>
+        <div class="detail-img">
+
+        </div>
+        <div class="detail-content">
+            <h1 class="class-name" id="class-name"> </h1>
+            <table class="class-index">
+                <tr class="bar-item" id="attack">
+                    <td>
+                        <span class="bar-label">Attack</span>
+                    </td>
+                    <td>
+                        <span class="bar-graph">
+                            <span class="bar-marker"></span>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="bar-item per80" id="defense">
+                    <td>
+                        <span class="bar-label">Defense</span>
+                    </td>
+                    <td>
+                        <span class="bar-graph">
+                            <span class="bar-marker"></span>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="bar-item per80" id="mobility">
+                    <td>
+                        <span class="bar-label">Mobility</span>
+                    </td>
+                    <td>
+                        <span class="bar-graph">
+                            <span class="bar-marker"></span>
+                        </span>
+                    </td>
+                </tr>
+                <tr class="bar-item per80" id="difficulty">
+                    <td>
+                        <span class="bar-label">Difficulty</span>
+                    </td>
+                    <td>
+                        <span class="bar-graph">
+                            <span class="bar-marker"></span>
+                        </span>
+                    </td>
+                </tr>
+            </table>     
+            <p class="class-des" id="class-des"> </p>
+            <div class="class-video" id="class-video"></div>
+        </div>
+    </div>
+    <script src="../Header/Header.js"></script>
+    <script src="../Classes/Classes.js"></script>
+</body> 
+</html>

@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+}
+
+.bg-img{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.container{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+ 
+.content-con{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    margin-top: 12vw;
+    align-items: flex-start;
+    z-index: 10;
+}
+
+.overview a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: cyan;
+}
+
+.left{
+    width: 50%;
+    padding: 5vw;
+    padding-top: 0vw;
+}
+
+.right{
+    width: 50%;
+}
+
+.maple{
+    color: sandybrown;
+    font-size: 5vw;
+    font-weight: bolder;
+    margin-top: 0.5vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-family: 'Titan One', cursive;
+}
+
+.welcome{
+    color: white;
+    font-size: 2vw;
+    font-weight: bold;
+    margin-top: 0;
+}
+ 
+.des{
+    color: white;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+    text-align: justify;
+    padding-left: 1vw;
+    margin-left: 1vw;
+    border-left: solid sandybrown;
+    font-family: 'Lora', serif;
+}
+
+.slogan{
+    color: white;
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1vw;
+    font-family: 'Acme', sans-serif;
+}
+
+.footing{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+.footingImg{
+    width: 100vw;
+    height: auto;
+    margin-top: -7vw;
+    z-index: -1;
+}
+
+.footingContent{
+    position: absolute;
+    margin-top: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 30vw;
+    padding: 0;
+    z-index: 2;
+}
+
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.slideshow-container {
+    height: 30vw;
+    width: auto;
+    position: relative;
+    margin-top: -4vw;
+    margin-left: 10vw;
+}
+
+.mySlides{
+    height: 100%;
+    width: 100%;
+}
+
+.img{
+    height: 100%;
+    width: auto;
+}
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .0} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }

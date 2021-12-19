@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="World.css">
+    <link rel="stylesheet" href="../Header/Header.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <title>World</title>
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="world-map">
+        <div class="world-des">
+            <h2 class="slogan">EXPLORE THE WORLD OF</h2>
+            <h1 class="maple">MapleStory</h1>
+            <p class="des">Maple World is the world where players can explore in MapleStory. Each location is unique and has its own set of monsters, NPCs, and quests.From floating cities to giant submarines, alien worlds to hidden kingdoms, MapleStory features one of the most diverse landscapes in MMORPG gaming. Each area on the map has a distinct visual look and a unique culture to engross yourself in. In a world as massive as this, the journey never ends!</p>
+        </div>
+        <div class="world-img">
+            <div class="img-container">
+                <img class="whole-world" src="../Maple/world/Maple_World.png">
+                <div class="island" style="position: absolute; left: 3.5%; top: 23%;">
+                    <img class="island-hover" src="../Maple/world/vic-island-hover.png">
+                </div>
+                <div class="island" style="position: absolute; left: 19%; top: 14%;">
+                    <img class="island-hover" src="../Maple/world/maple-island-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 23%; top: 17.5%;">
+                    <img class="island-hover" src="../Maple/world/ereve-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 12%; top: 46%;">
+                    <img class="island-hover" src="../Maple/world/minar-forest-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 71%; top: 43%;">
+                    <img class="island-hover" src="../Maple/world/mu-lung-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 43%; top: 66%;">
+                    <img class="island-hover" src="../Maple/world/nihal-desert-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 3%; top: 46%;">
+                    <img class="island-hover" src="../Maple/world/rien-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 1.5%; top: 67%;">
+                    <img class="island-hover" src="../Maple/world/temple-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 4%; top: 11%;">
+                    <img class="island-hover" src="../Maple/world/zipangu-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 23%; top: 34%;">
+                    <img class="island-hover" src="../Maple/world/aqua-road-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; right: 1%; top: 1%;">
+                    <img class="island-hover" src="../Maple/world/edelstein-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 36%; top: 25%;">
+                    <img class="island-hover" src="../Maple/world/El-Nath-hover.png">
+                </div> 
+                <div class="island" style="position: absolute; left: 31%; top: 48.5%;">
+                    <img class="island-hover" src="../Maple/world/ludus-lake-hover.png">
+                </div>
+                <div class="island" style="position: absolute; left: 37%; top: 83%;">
+                    <img class="island-hover" src="../Maple/world/kritias-hover.png">
+                </div> 
+            </div>   
+        </div>    
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="island-detail-container">
+            <div class="island-detail">
+                <div class="x-button" onclick="return xbtn_onclick()">
+                    <img class="cross-sword" src="../Maple/crossed-sword.png">
+                </div>
+
+                <h1 class="island-name" id="island-name"></h1>
+                <div class="island-img-con">
+                    <img class="island-img" src="">
+                </div>
+                <p class="island-des" id="island-des"></p>
+
+                <h2 class="head">AREA</h2>
+                <div class="island-img-con">
+                    <img class="island-img" src="">
+                    <img class="island-img" src="">
+                    <img class="island-img" src="">
+                </div>
+
+                <h2 class="head">MONSTER</h2>
+                <div class="island-img-con">
+                    <img class="island-img" style="box-shadow: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Header/Header.js"></script>
+    <script src="../World/World.js"></script>
+</body>
+</html>

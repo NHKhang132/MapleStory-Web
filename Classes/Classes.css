@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Maple/classes_wall_notext.jpg);
+    background-size:100vw 100vw, auto;
+    background-repeat:no-repeat, no-repeat;
+    background-position:center, center;
+}
+
+.class a{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: cyan;
+}
+
+.classes-list{
+    position: relative;
+
+    display: flex;
+    margin: 3vw auto 0 auto;
+    width: 80vw;
+    height: auto;   
+    overflow-x: hidden;
+}
+
+.classes{
+    position: relative;
+    min-width: 20vw;
+    height: calc(width/5*7);     
+    margin: 3vw;        
+}
+
+    .classes::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: cyan;
+        filter: blur(5px);
+        z-index: 0;
+    }
+
+    .classes:hover::before{
+        content: '';
+        background: linear-gradient(45deg, cyan, green, yellow, red, purple, pink, blue);
+        filter: blur(25px);
+        background-size: 400%;
+        animation: bg-animate 20s linear infinite;
+    }
+
+    .classes:hover::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        z-index: 2;
+    }
+
+    @keyframes bg-animate{
+        0%{
+            background-position: 0 0;
+        }
+        50%{
+            background-position: 400% 0;
+        }
+        100%{
+            background-position: 0 0;
+        }
+    }
+
+.classes .class-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.classes .class-img1{
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    left: -15%;
+    bottom: 0;
+    width: auto;
+    height: 110%;
+    z-index: 3;
+}
+
+.class-img:hover~.class-img1{
+    visibility: visible;
+    opacity: 1;
+    animation-name: img-animate;
+    animation-duration: 1s;
+    animation-fill-mode: initial;
+}
+
+    @keyframes img-animate{
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+
+.classes-detail{
+    position: absolute;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../Maple/class_bg.jpg);
+    background-size: cover;
+    top: 0;
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+
+.x-button{
+    position: absolute;
+    top: 2vw;
+    right: 2vw;
+    width: 4vw;
+    height: auto;
+}
+
+    .x-button .cross-sword{
+        width: 100%;
+        height: auto;
+        animation-name: x_out;
+        animation-duration: 1s;
+    }
+
+        .cross-sword:hover{
+            transform: rotate(180deg);
+            animation-name: x_in;
+            animation-duration: 1s;
+        }
+
+        @keyframes x_in{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(180deg);
+            }
+        }
+
+        @keyframes x_out{
+            0%{
+                transform: rotate(180deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+.detail-content{
+    width: 53%;
+    height: 100%;
+    float: right;
+}
+
+    .detail-content .class-name{
+        margin-top: 2vw;
+        margin-left: 0;
+        margin-bottom: 0.5vw;
+        font-size: 4vw;
+        color: sandybrown;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-family: 'Alfa Slab One', cursive;
+    }
+    
+    .detail-content .class-des{
+        padding-left: 1vw;
+        margin-bottom: 1vw;
+        font-size: 1vw;
+        width: 90%;
+        border-left: solid orange 4px;
+        color: white;
+        text-align: justify;
+        font-family: 'Lora', serif;
+    }
+
+    .detail-content .class-video{
+        padding-left: 50px;
+    }
+    
+    .detail-content .class-index{
+        display: flex;
+        width: 50%;
+        margin-bottom: 1vw;
+        padding: 1vw;
+        background-color: rgba(255, 255, 255, 0.4);
+        border-radius: 1vw;
+        border:  white;
+        border-style: double;
+    }
+
+        .bar-label{
+            margin-right: 20px;
+            font-weight: bold;
+            font-size: 18px;
+        }    
+
+        .bar-graph{
+            position: relative;
+            display: inline-block;
+            width: 205px;
+            height: 12px;
+            background: url(../Maple/bar1.png);
+        } 
+
+        .class-index .bar-item .bar-graph .bar-marker{
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            height: 12px;
+            background: url(../Maple/bar2.png);
+        }
+        .class-index .per100 .bar-graph .bar-marker{
+            width: 100%;
+        }
+        .class-index .per80 .bar-graph .bar-marker{
+            width: 80%;
+        }
+        .class-index .per60 .bar-graph .bar-marker{
+            width: 60%;
+        }
+        .class-index .per40 .bar-graph .bar-marker{
+            width: 40%;
+        }
+
+
+    
