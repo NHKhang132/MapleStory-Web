@@ -129,6 +129,9 @@ const scrollContainer = document.querySelector("div.classes-list");
     }
 
     function xbtn_onclick(){
+        const class_video = document.getElementById("class-video");
+        class_video.innerHTML = "";
+
         document.getElementById("cloneImg").remove();
 
         modal.style.display = 'none';
