@@ -7,7 +7,7 @@
         <br>
         <img src="../Maple/loading2.gif">
     </div>
-    <a href="../Landing/Landing.html"><img class="logo" src="../Maple/light-logo-full.png"></a>
+    <a href="../Index.html"><img class="logo" src="../Maple/light-logo-full.png"></a>
     <div class="menu">
         <div class="page-btn overview">
             <div class="topBor"></div>
