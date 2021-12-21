@@ -7,6 +7,7 @@
     <title>Play</title>   
     <link rel="stylesheet" href="../Header/Header.css">
     <link rel="stylesheet" href="Play.css">
+    <link rel="stylesheet" href="../fontawesome/css/all.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Belgrano&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
@@ -37,13 +38,90 @@
             <p class="journey">
                 JOURNEY
             </p>
-            <a href="https://maplestory.nexon.net/"><button class="btn1" type="button">EXPLORE</button></a>
-            <a href="https://maplestory.nexon.net/"><button class="btn2" type="button">PLAY NOW</button></a>
+            <a><button class="btn btn1" type="button" id="playnow-btn">PLAY NOW</button></a>
+            <a><button class="btn btn2" type="button" id="download-btn">DOWNLOAD</button></a>
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-container download" id="download">
+                <div class="x-button" onclick="return xbtn_onclick()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <hr>
+                <div class="title-container">
+                    <p class="title">CHOOSE YOUR FLATFORM</p>
+                </div>
+                <div class="btn-container1 btn-con1">
+                    <button type="button"><img class="btn-img" src="../Maple/play/nexon.png"></button>
+                </div>
+                <div class="btn-container1 btn-con2">
+                    <button type="button"><img class="btn-img" src="../Maple/play/steam.png"></button>
+                </div>
+                <div class="btn-container1 btn-con3">
+                    <button type="button"><img class="btn-img" src="../Maple/play/appstore.png"></button>
+                </div>
+                <div class="btn-container1 btn-con4">
+                    <button type="button"><img class="btn-img" src="../Maple/play/gg-play.png"></button>
+                </div>
+                <div class="btn-container2 btn-con">
+                    <button type="button">Returning Player? <b>Download</b> the Launcher</button>
+                </div>
+            </div>
+
+            <div class="modal-container signin" id="signin">
+                <div class="x-button" onclick="return xbtn_onclick()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button class="btn-sign signin-btn" id="signin-btn">SIGN IN</button>
+                <button class="btn-sign signup-btn" id="signup-btn">SIGN UP</button>
+                <hr class="signhr">
+                <div class="contact">
+                    <a href="" class="icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="icon"><i class="fab fa-google"></i></i></a>
+                    <a href="" class="icon"><i class="fab fa-apple"></i></a>
+                </div>
+                <form>
+                    <div class="inp-container">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="inp-container">
+                        <input type="password" placeholder="Password">
+                    </div>                    
+                </form>
+                <button class="submit-btn">CONTINUE</button>
+            </div>
+
+            <div class="modal-container signup" id="signup">
+                <div class="x-button" onclick="return xbtn_onclick()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <button class="btn-sign signin-btn" id="signin-btn">SIGN IN</button>
+                <button class="btn-sign signup-btn" id="signup-btn">SIGN UP</button>
+                <hr class="signhr">
+                <div class="contact">
+                    <a href="" class="icon"><i class="fab fa-facebook-square"></i></a>
+                    <a href="" class="icon"><i class="fab fa-google"></i></i></a>
+                    <a href="" class="icon"><i class="fab fa-apple"></i></a>
+                </div>
+                <form>
+                    <div class="inp-container">
+                        <input type="text" placeholder="Username">
+                    </div>
+                    <div class="inp-container">
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <div class="inp-container">
+                        <input type="password" placeholder="Confirm your password">
+                    </div>                      
+                </form>
+                <button class="submit-btn">CONTINUE</button>
+            </div>
         </div>
     </main>
     
 
     <script src="Play.js"></script>
+    <script src="Play2.js"></script>
     <script src="../Header/Header.js"></script>
 </body>
 </html>

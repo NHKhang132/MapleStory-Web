@@ -35,19 +35,12 @@
 )();
 
 (function () {
-
-    const preloader = document.querySelector('#preloader');
-  
+    const preloader = document.querySelector('#preloader'); 
     setTimeout(() => {
-  
       preloader.style.opacity = '0';
-  
     }, 1000);
   
-    setTimeout(() => {
-  
-      preloader.style.display = 'none';
-  
-    }, 1250);
-  
-  })();
+    setTimeout(() => {  
+      preloader.style.display = 'none'; 
+    }, 1250);  
+})();
