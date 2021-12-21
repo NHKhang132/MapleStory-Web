@@ -290,8 +290,6 @@ body{
         width: 30%;
         border: none;
         border-top: solid steelblue 3px;
-        animation-name: hranimation1;
-        animation-duration: 1s;
     }
 
     .signup hr{
@@ -301,8 +299,6 @@ body{
         width: 30%;
         border: none;
         border-top: solid steelblue 3px;
-        animation-name: hranimation1;
-        animation-duration: 1s;
     }
 
     form{
@@ -339,6 +335,9 @@ body{
         height: 10%;
         top: 80%;
         left: 30%;
+        font-family: 'Belgrano', serif;
+        font-size: 1.2vw;
+        font-weight: bolder;
     }
         .submit-btn:hover{
             background: steelblue;
