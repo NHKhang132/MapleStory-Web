@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
+
 main{
     z-index: 0;
     width: 100vw;
