@@ -51,7 +51,7 @@ const scrollContainer = document.querySelector("div.classes-list");
         barItem[0].classList.add('per80')
         barItem[1].classList.add('per40')
         barItem[2].classList.add('per80')
-        barItem[3].classList.add('per60')
+        barItem[3].classList.add('per100')
     }
     thief.onclick = function(){
         imgId = 'thief1'
