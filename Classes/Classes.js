@@ -140,6 +140,7 @@ const scrollContainer = document.querySelector("div.classes-list");
             Item.classList.remove('per100')
             Item.classList.remove('per60')
             Item.classList.remove('per80')
+            Item.classList.remove('per40')
         })
     }
 
